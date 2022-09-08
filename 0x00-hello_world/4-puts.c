@@ -4,7 +4,8 @@
  * main - entry point
  *
  * Description: using the main functions
- * return: 0 after printing the function
+ * this program prints puts
+ * Return: 0 
  */
 int main(void)
 {	

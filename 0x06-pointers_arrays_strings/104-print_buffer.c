@@ -33,15 +33,17 @@ void print_line(char *c, int s, int l)
 }
 
 /**
- * print_buffer - prints out buffer
- * @b: to print buffer
- * @size: buffer size
+ * print_buffer - prints a buffer
+ * @b: buffer to print
+ * @size: size of buffer
+ *
+ * Return: void
  */
 void print_buffer(char *b, int size)
 {
 	int i;
 
-	for (i = 0; i < (size - 1) / 10 && siz
+	for (i = 0; i <= (size - 1) / 10 && size; i++)
 	{
 		printf("%08x: ", i * 10);
 		if (i < size / 10)
@@ -55,5 +57,4 @@ void print_buffer(char *b, int size)
 		putchar('\n');
 	}
 	if (size == 0)
-		putchar('n');
-}
+		putchar('\n');

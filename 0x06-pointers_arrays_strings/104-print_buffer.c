@@ -30,3 +30,30 @@ void print_line(char *c, int s, int l)
 		else
 			putchar('.');
 	}
+}
+
+/**
+ * print_buffer - prints out buffer
+ * @b: to print buffer
+ * @size: buffer size
+ */
+void print_buffer(char *b, int size)
+{
+	int i;
+
+	for (i = 0; i < (size - 1) / 10 && siz
+	{
+		printf("%08x: ", i * 10);
+		if (i < size / 10)
+		{
+			print_line(b, 9, i);
+		}
+		else
+		{
+			print_line(b, size % 10 - 1, i);
+		}
+		putchar('\n');
+	}
+	if (size == 0)
+		putchar('n');
+}

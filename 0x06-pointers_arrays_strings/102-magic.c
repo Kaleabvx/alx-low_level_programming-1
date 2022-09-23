@@ -1,16 +1,23 @@
-#include "main.h"
-/**
-* reverse_array - reverses an array of int in task
-* @a: array Must to Be Removed
-* @n: no of Elem inn the arr
-*/
-void reverse_array(int *a, int n)
+#include <stdio.h>
+
+int main(void)
 {
-int i, j, tmp;
-j = n - 1;
-for (i = 0; i < n / 2; i++)
-{
-tmp = a[i];
-a[i] = a[j];
-a[j--] = tmp;
+  int n;
+  int a[5];
+  int *p;
+  
+  a[2] = 1024;
+  p = &n;
+  
+/*
+   * write your line of code here...
+   * Remember:
+   * - you are not allowed to use a
+   * - you are not allowed to modify p
+   * - only one statement
+   * - you are not allowed to code anything else than this line of code
+   */
+    *(p + 5) = 98;
+  printf("a[2] = %d\n", a[2]);
+  return (a);
 }

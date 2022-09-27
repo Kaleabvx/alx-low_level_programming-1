@@ -1,18 +1,16 @@
 #include "main.h"
-
 /**
-* _memset - files a memory block with a constant type
-* @s: address
-* @b: char to be used
-* @n: no of types must be used
-* Return: pointer to the memory
-*/
-char *memset(char *s, char b, unsigned int n)
+ * _memset -> Fills the first n bytes of the memory area
+ * @s: A pointer to the memory area to be filled.
+ * @c: The character to fill the memory area with.
+ * @n: The number of bytes to be filled.
+ * Return: A pointer to the filled memory area @s.
+ */
+void *_memset(void *s, int c, size_t n)
 {
-	while (n)
-	{
-		s[n - 1] = b;
-		n--;
-	}
-	return (s);
+unsigned int index;
+unsigned char *memory = s, value = c;
+for (index = 0; index < n; index++)
+memory[index] = value;
+return (memory);
 }

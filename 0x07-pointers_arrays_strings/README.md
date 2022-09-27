@@ -1,1 +1,1 @@
-For  0x07 alx project even pointers
+0x07 readme file
